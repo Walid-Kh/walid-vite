@@ -18,14 +18,13 @@
 ## to be Added
 
 - [ ] Local data base for the project
-- [ ] About Page
 - [ ] Add the Actually projects as Cards
-- [ ] Change the Article Tab to something more meaningful (LinkedIn) or something else
-- [ ] Figure out a less painful way to work with css
+- [x] About Page
+- [x] Figure out a less painful way to work with css
   - [ ] [styled components](https://www.styled-components.com)
   - [ ] [Material Design](https://mui.com/)
-  - [ ] [TailWind CSS](https://tailwindcss.com/)
-- [ ] Dark Mode 
+  - [x] [TailWind CSS](https://tailwindcss.com/)
+- [x] Dark Mode 
 ## Done
 
 - [x] Typescript
