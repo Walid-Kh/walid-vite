@@ -4,7 +4,7 @@
 **This is my portfolio I want to share some of the projects I've worked on as well as give credit to the talented folks I've worked with**
 
 <p align="center">
-    <img src="https://media3.giphy.com/media/emz6oJdNCwtJ81deoW/giphy.gif?cid=790b7611f6f921a5ff7605f3c3abd395c1a3d22f546739b0&rid=giphy.gif&ct=g">
+    <img src="https://media4.giphy.com/media/Z09vusS89prYY8tNyC/giphy.gif">
 </p>
 
 ## The Goal

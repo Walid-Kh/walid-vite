@@ -23,7 +23,7 @@ export const Project: React.FC<props> = () => {
     err: string | null;
   } = useFetch(`http://192.168.1.9:8000/projects/${id}`);
   return (
-    <div className="mx-auto my-auto text-slate-100">
+    <div className="flex flex-col items-center justify-center my-auto text-slate-100">
       {isLoading && <Loading />}
       {err && <LoadingError errMsg={err} />}
       {data && (
