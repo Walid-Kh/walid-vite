@@ -1,0 +1,2 @@
+primary : color-slate-100
+dim : color-slate-300 && opacity-60
