@@ -28,6 +28,5 @@ export interface card {
   id: string,
   createdAt: string,
   infos: info[],
-  upVotes: number, 
-  downVotes: number, 
+  markdown: string
 };

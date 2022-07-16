@@ -34,14 +34,14 @@ export const Project: React.FC<props> = () => {
             className="lg:w-[80%] w-screen"
           />
           <div className="flex flex-col w-[90%] lg:w-[80%] mt-8">
-            <div className="flex flex-col mb-4">
+            <div className="flex flex-col">
               <h1 className="text-2xl font-bold">{data.title.name}</h1>
               <Authors authors={data.authors} />
               <p className="text-slate-300 opacity-60">
                 {dayjs(data.createdAt).format("MMM DD, YYYY")}
               </p>
             </div>
-            <Article />
+            <Article markdown={data.markdown} />
             {/* <p className="text-lg font-medium">{data.body}</p> */}
             <Info infos={data.infos} />
           </div>
