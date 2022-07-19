@@ -1,19 +1,16 @@
 import dayjs from "dayjs";
 import React from "react";
 import { useParams } from "react-router-dom";
-import useFetch from "../../Hooks/useFetch";
-import { card } from "../../types/types";
+import projects from "../../data/db";
 
 import Authors from "../shared/Authors";
 import Info from "../shared/Info";
-import Loading from "../shared/Loading";
-import LoadingError from "../shared/LoadingError";
 import Article from "./Article";
 /* import CommentSection from "./CommentSection"; */
 interface props {}
 export const Project: React.FC<props> = () => {
   const { id } = useParams();
-  const {
+  /* const {
     data,
     isLoading,
     err,
@@ -21,11 +18,10 @@ export const Project: React.FC<props> = () => {
     data: card;
     isLoading: boolean;
     err: string | null;
-  } = useFetch(`http://192.168.1.9:8000/projects/${id}`);
+  } = useFetch(`http://192.168.1.9:8000/projects/${id}`); */
+  const data = projects.find(item => item.id === id); 
   return (
     <div className="flex flex-col items-center justify-center my-auto text-slate-100">
-      {isLoading && <Loading />}
-      {err && <LoadingError errMsg={err} />}
       {data && (
         <article className="flex flex-col my-12 items-center">
           <img

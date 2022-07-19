@@ -4,12 +4,13 @@ import Blogs from "./Blogs";
 import Loading from "../shared/Loading";
 import LoadingError from "../shared/LoadingError";
 import useFetch from "../../Hooks/useFetch";
+import data from "../../data/db"
 interface props {
   category: string;
 }
 
 export const Home: React.FC<props> = ({ category }) => {
-  const {
+  /* const {
     data,
     isLoading,
     err,
@@ -17,14 +18,13 @@ export const Home: React.FC<props> = ({ category }) => {
     data: card[] | undefined;
     isLoading: boolean;
     err: string | undefined | null;
-  } = useFetch("http://192.168.1.9:8000/projects");
+  } = useFetch("http://192.168.1.9:8000/projects"); */
+
   return (
     <div
       className="flex justify-center mx-auto my-auto lg:w-[80%] w-[90%] text-slate-100"
     >
       {data && <Blogs blogs={data} category={category} />}
-      {isLoading && <Loading />}
-      {err && <LoadingError errMsg={err} />}
     </div>
   );
 };
