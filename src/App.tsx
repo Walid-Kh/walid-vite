@@ -14,7 +14,6 @@ function App() {
     fetchdata(); 
   },[]); */
   return (
-    <Router>
       <div className="flex flex-col mx-auto h-screen ">
         <NavBar />
         <Routes>
@@ -26,7 +25,6 @@ function App() {
           </Route>
         </Routes>
       </div>
-    </Router>
   );
 }
 
